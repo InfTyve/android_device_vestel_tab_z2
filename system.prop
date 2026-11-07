@@ -1,0 +1,10 @@
+# System properties for EKVATOR (TWRP recovery)
+ro.board.platform=mt6765
+ro.hardware=mt6765
+ro.product.device=EKVATOR
+ro.product.name=EKVATOR
+ro.product.model=V TAB Z2 LTE
+ro.product.manufacturer=Vestel
+ro.product.brand=Vestel
+ro.sf.lcd_density=280
+ro.zygote=zygote64_32
