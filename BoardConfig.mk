@@ -62,6 +62,11 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 BOARD_USES_DYNAMIC_PARTITIONS := true
 TW_INCLUDE_LOGICAL := true
 
+# fastbootd: needed to manage logical partitions with "fastboot reboot fastboot"
+# (delete/resize/flash system inside super). Board must expose super + a
+# working usb gadget; both are present on this platform.
+TW_INCLUDE_FASTBOOTD := true
+
 # AVB - keep verification off, do not re-sign
 BOARD_AVB_ENABLE := false
 

@@ -23,3 +23,9 @@ PRODUCT_PACKAGES += \
     e2fsck_static \
     mke2fs_static \
     tune2fs_static
+
+# fastbootd userspace daemon (TW_INCLUDE_FASTBOOTD in BoardConfig.mk only
+# sets the compile flag; the binary still has to be pulled into the
+# recovery ramdisk through PRODUCT_PACKAGES).
+PRODUCT_PACKAGES += \
+    fastbootd
